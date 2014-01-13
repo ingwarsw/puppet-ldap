@@ -22,9 +22,9 @@ SLAPD_PIDFILE=
 # Example usage:
 # SLAPD_SERVICES="ldap://127.0.0.1:389/ ldaps:/// ldapi:///"
 <% if @ssl then -%>
-SLAPD_SERVICES="ldap:/// ldaps:/// ldapi:///"
+SLAPD_SERVICES="ldaps:///"
 <% else -%>
-SLAPD_SERVICES="ldap:/// ldapi:///"
+SLAPD_SERVICES="ldap:///"
 <% end -%>
 
 # If SLAPD_NO_START is set, the init script will not start or restart
